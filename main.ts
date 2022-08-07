@@ -6,9 +6,18 @@ String2 = 1
 basic.forever(function () {
     if (String2) {
         basic.showIcon(IconNames.Heart)
-        music.playTone(262, music.beat(BeatFraction.Double))
+        basic.showIcon(IconNames.Duck)
     } else {
         basic.showString("Hello!")
+        basic.showNumber(0)
+        pins.servoSetPulse(AnalogPin.P14, 1500)
+        basic.showNumber(1)
+        pins.servoSetPulse(AnalogPin.P16, 1000)
+        basic.showNumber(2)
+        pins.servoSetPulse(AnalogPin.P12, 500)
+        basic.showNumber(3)
+        pins.servoSetPulse(AnalogPin.P13, 1500)
+        basic.showNumber(4)
         String2 = 1
     }
 })
