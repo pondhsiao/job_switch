@@ -1,5 +1,8 @@
-input.onGesture(Gesture.Shake, function () {
+input.onButtonPressed(Button.A, function () {
     String2 = 0
+})
+input.onGesture(Gesture.Shake, function () {
+	
 })
 let String2 = 0
 String2 = 1
@@ -8,16 +11,8 @@ basic.forever(function () {
         basic.showIcon(IconNames.Heart)
         basic.showIcon(IconNames.Duck)
     } else {
-        basic.showString("Hello!")
-        basic.showNumber(0)
-        pins.servoSetPulse(AnalogPin.P14, 1500)
-        basic.showNumber(1)
-        pins.servoSetPulse(AnalogPin.P16, 1000)
-        basic.showNumber(2)
-        pins.servoSetPulse(AnalogPin.P12, 500)
-        basic.showNumber(3)
-        pins.servoSetPulse(AnalogPin.P13, 1500)
-        basic.showNumber(4)
+        basic.showString("Hi!")
+        pins.digitalWritePin(DigitalPin.P1, 1)
         String2 = 1
     }
 })
